@@ -1,4 +1,7 @@
-
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+}
 // Function to change theme
 function changeTheme(theme) {
     document.body.className = theme;
@@ -16,7 +19,7 @@ function addToCart(product, price) {
     notification.style.display = 'block';
     setTimeout(() => {
         notification.style.display = 'none';
-    }, 3000);
+    }, 1500);
 }
 
 // Function to display cart items and total
